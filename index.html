@@ -6,36 +6,63 @@
     <title>AltaVista Search</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Courier New", Courier, monospace; /* Old-school font */
             text-align: center;
-            background-color: #f2f2f2;
+            background-color: #e0e0e0; /* Light grey background */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 20px;
         }
         .container {
             width: 100%;
-            margin-top: 100px;
+            margin-top: 50px;
         }
         .logo img {
-            width: 300px;
+            width: 400px; /* Slightly smaller logo for a vintage look */
         }
         .search-bar {
             margin: 20px 0;
+            display: inline-block; /* Center the rectangle */
+            padding: 10px;
+            border: 3px solid #007BFF; /* Blue rectangle */
+            border-radius: 5px; /* Rounded corners */
+            background-color: white; /* White background for the search box */
         }
         .search-bar input[type="text"] {
-            width: 400px;
-            padding: 10px;
-            font-size: 16px;
+            width: 300px; /* Reduced width for old style */
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc; /* Simple border */
+            border-radius: 5px; /* Rounded corners */
         }
         .search-bar input[type="submit"] {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 5px 10px;
+            font-size: 14px;
+            background-color: #007BFF; /* Classic button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
         }
         .links {
             margin-top: 20px;
+            font-size: 16px; /* Slightly larger font for links */
         }
         .links a {
             margin: 0 10px;
             text-decoration: none;
-            color: #333;
+            color: #007BFF; /* Classic link color */
+        }
+        .links a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .old-school {
+            font-size: 18px; /* Larger text for old-school vibe */
+            margin-top: 30px;
+            color: #660066; /* Dark purple for a vintage feel */
         }
     </style>
 </head>
@@ -44,7 +71,7 @@
     <div class="container">
         <!-- Logo section -->
         <div class="logo">
-            <img src="https://via.placeholder.com/920x350?text=AltaVista" alt="AltaVista Logo">
+            <img src="images/altavista-logo.png" alt="AltaVista Logo">
         </div>
 
         <!-- Search Bar -->
@@ -57,11 +84,18 @@
 
         <!-- Navigation links -->
         <div class="links">
-            <a href="#">Images</a> |
-            <a href="#">Videos</a> |
-            <a href="#">News</a> |
-            <a href="#">Shopping</a> |
-            <a href="#">More</a>
+            <a href="#">Movies</a> |
+            <a href="#">TV Shows</a> |
+            <a href="#">Music</a> |
+            <a href="#">Games</a> |
+            <a href="#">Celebrities</a> |
+            <a href="#">Comics</a> |
+            <a href="#">Entertainment News</a> |
+            <a href="#">Oldies but Goldies</a>
+        </div>
+
+        <div class="old-school">
+            <p>Take a trip down memory lane with classic entertainment!</p>
         </div>
     </div>
 
