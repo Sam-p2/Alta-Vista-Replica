@@ -64,6 +64,42 @@
             margin-top: 30px;
             color: #660066; /* Dark purple for a vintage feel */
         }
+        .checkboxes {
+            margin-top: 20px;
+            text-align: left; /* Align checkboxes to the left */
+            display: inline-block; /* Center the checkboxes */
+            border: 1px solid #007BFF; /* Blue border for the checkbox area */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px; /* Padding around checkboxes */
+            background-color: white; /* White background for checkboxes */
+        }
+        .alta-vista-live {
+            margin-top: 20px;
+            font-size: 20px; /* Increased font size */
+            color: red; /* Red font color */
+            text-decoration: underline; /* Underline text */
+        }
+        .example {
+            margin-top: 10px;
+            font-size: 14px; /* Smaller font for example text */
+            color: #555; /* Dark grey color for example text */
+        }
+        .dropdown {
+            margin-top: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown select {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc; /* Simple border */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .question {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333; /* Dark text color */
+        }
     </style>
 </head>
 <body>
@@ -82,6 +118,35 @@
             </form>
         </div>
 
+        <!-- Example Text -->
+        <div class="example">
+            <p>Example: When precisely will the new millennium begin?</p>
+        </div>
+
+        <!-- Question Section -->
+        <div class="question">
+            <p>Ask AltaVista a question or put some keywords:</p>
+            <div class="dropdown">
+                <select>
+                    <option value="default" disabled selected>Select a category</option>
+                    <option value="language">Language</option>
+                    <option value="music">Music</option>
+                    <option value="videos">Videos</option>
+                    <option value="mp3">MP3</option>
+                    <option value="news">News</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Checkbox Options -->
+        <div class="checkboxes">
+            <p>Select your search options:</p>
+            <label><input type="checkbox" name="options" value="web"> The Web</label><br>
+            <label><input type="checkbox" name="options" value="news"> The News</label><br>
+            <label><input type="checkbox" name="options" value="product"> The Product</label><br>
+            <label><input type="checkbox" name="options" value="discussion"> The Discussion Groups</label>
+        </div>
+
         <!-- Navigation links -->
         <div class="links">
             <a href="#">Movies</a> |
@@ -96,6 +161,11 @@
 
         <div class="old-school">
             <p>Take a trip down memory lane with classic entertainment!</p>
+        </div>
+
+        <!-- AltaVista Live Section -->
+        <div class="alta-vista-live">
+            <p>Welcome to AltaVista Live!</p>
         </div>
     </div>
 
