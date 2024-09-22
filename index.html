@@ -6,16 +6,20 @@
     <title>AltaVista Search</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Georgia, serif; /* Vintage font for body */
             text-align: center;
-            background-color: #f2f2f2;
+            background-color: #e0e0e0; /* Light grey background */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 20px;
         }
         .container {
             width: 100%;
-            margin-top: 100px;
+            margin-top: 50px;
+            position: relative; /* Positioning context for absolute children */
         }
         .logo img {
-            width: 300px;
+            width: 400px; /* Slightly smaller logo for a vintage look */
         }
         .search-bar {
             margin: 20px 0;
@@ -23,19 +27,54 @@
         .search-bar input[type="text"] {
             width: 400px;
             padding: 10px;
-            font-size: 16px;
+            font-size: 18px; /* Increased font size */
+            font-family: "Courier New", Courier, monospace; /* Vintage font for input */
+            border: 2px solid blue; /* Blue rectangle */
         }
         .search-bar input[type="submit"] {
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 18px; /* Increased font size */
+            font-family: "Courier New", Courier, monospace; /* Vintage font for submit button */
         }
         .links {
             margin-top: 20px;
+            text-align: center; /* Centering links */
         }
         .links a {
             margin: 0 10px;
             text-decoration: none;
-            color: #333;
+            color: blue; /* Blue color for links */
+            font-size: 20px; /* Increased font size */
+        }
+        .links a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .options {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            background-color: yellow; /* Yellow background */
+            padding: 10px;
+            border: 2px solid black; /* Black border */
+            text-align: left;
+        }
+        .options label {
+            display: block;
+        }
+        .live {
+            color: red;
+            text-decoration: underline;
+            margin-top: 20px;
+            font-size: 20px; /* Increased font size */
+        }
+        .example {
+            margin-top: 20px;
+            font-size: 18px; /* Increased font size */
+        }
+        .entertainment {
+            margin-top: 20px;
+            text-align: center; /* Center text */
+            font-size: 20px; /* Increased font size */
         }
     </style>
 </head>
@@ -44,7 +83,7 @@
     <div class="container">
         <!-- Logo section -->
         <div class="logo">
-            <img src="https://via.placeholder.com/920x350?text=AltaVista" alt="AltaVista Logo">
+            <img src="images/altavista-logo.png" alt="AltaVista Logo"> <!-- Updated logo source -->
         </div>
 
         <!-- Search Bar -->
@@ -55,14 +94,35 @@
             </form>
         </div>
 
+        <!-- Select options section -->
+        <div class="options">
+            <strong>Select your search options:</strong><br>
+            <input type="checkbox"> The Web<br>
+            <input type="checkbox"> The News<br>
+            <input type="checkbox"> The Product<br>
+            <input type="checkbox"> The Discussion Groups
+        </div>
+
         <!-- Navigation links -->
         <div class="links">
-            <a href="#">Images</a> |
-            <a href="#">Videos</a> |
-            <a href="#">News</a> |
-            <a href="#">Shopping</a> |
-            <a href="#">More</a>
+            <strong>
+                <a href="#">Images</a> |
+                <a href="#">Videos</a> |
+                <a href="#">News</a> |
+                <a href="#">Shopping</a> |
+                <a href="#">More</a>
+            </strong>
         </div>
+
+        <!-- Entertainment section -->
+        <div class="entertainment">
+            <strong>Movies | TV Shows | Music | Games | Celebrities | Comics | Entertainment News | Oldies but Goldies</strong>
+            <p>Take a trip down memory lane with classic entertainment!</p>
+        </div>
+
+        <!-- Additional text -->
+        <div class="live">Welcome to AltaVista Live!</div>
+        <div class="example">Example: When precisely will the new millennium begin?</div>
     </div>
 
 </body>
