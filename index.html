@@ -6,7 +6,7 @@
     <title>AltaVista Search</title>
     <style>
         body {
-            font-family: "Courier New", Courier, monospace; /* Old-school font */
+            font-family: Arial, sans-serif; /* Modern font */
             text-align: center;
             background-color: #e0e0e0; /* Light grey background */
             color: #333; /* Dark text color */
@@ -27,20 +27,25 @@
         .search-bar input[type="text"] {
             width: 400px;
             padding: 10px;
-            font-size: 16px;
+            font-size: 18px; /* Increased font size */
             border: 2px solid blue; /* Blue rectangle */
         }
         .search-bar input[type="submit"] {
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 18px; /* Increased font size */
         }
         .links {
             margin-top: 20px;
+            text-align: center; /* Centering links */
         }
         .links a {
             margin: 0 10px;
             text-decoration: none;
-            color: #333;
+            color: blue; /* Blue color for links */
+            font-size: 20px; /* Increased font size */
+        }
+        .links a:hover {
+            text-decoration: underline; /* Underline on hover */
         }
         .options {
             position: absolute;
@@ -58,13 +63,16 @@
             color: red;
             text-decoration: underline;
             margin-top: 20px;
+            font-size: 20px; /* Increased font size */
         }
         .example {
             margin-top: 20px;
+            font-size: 18px; /* Increased font size */
         }
         .entertainment {
             margin-top: 20px;
-            text-align: left; /* Align left for better readability */
+            text-align: center; /* Center text */
+            font-size: 20px; /* Increased font size */
         }
     </style>
 </head>
@@ -95,11 +103,13 @@
 
         <!-- Navigation links -->
         <div class="links">
-            <a href="#">Images</a> |
-            <a href="#">Videos</a> |
-            <a href="#">News</a> |
-            <a href="#">Shopping</a> |
-            <a href="#">More</a>
+            <strong>
+                <a href="#">Images</a> |
+                <a href="#">Videos</a> |
+                <a href="#">News</a> |
+                <a href="#">Shopping</a> |
+                <a href="#">More</a>
+            </strong>
         </div>
 
         <!-- Entertainment section -->
